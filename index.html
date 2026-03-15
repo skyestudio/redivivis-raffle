@@ -2120,7 +2120,7 @@
         alert('Please enter a valid email address.');
         return;
       }
-console.log(tickets)
+// console.log(tickets)
       const amountNGN = tickets * 100;
       const amountKobo = amountNGN * 100;   // Paystack works in kobo
       const PAYSTACK_PUBLIC_KEY = 'pk_test_e177951375bacb76681a7d45dbf2ef647c9e10ae';
@@ -2190,7 +2190,7 @@ console.log(tickets)
             phone: phone,
             address: address,
             tickets_bought: tickets,
-            ticket_price_each: amountKobo,
+            ticket_price_each: amountNGN,
             amount_paid_ngn: amountNGN,
             currency: 'NGN',
             campaign: 'Redivivis Startup Tech Kit Giveaway',
