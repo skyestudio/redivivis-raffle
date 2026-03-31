@@ -1941,8 +1941,8 @@
 
       // Set to next Thursday
       const dayOfWeek = now.getDay(); // 0=Sun, 1=Mon, ..., 4=Thu
-      let daysUntilFriday = (7 - dayOfWeek + 8) % 8;
-      if (daysUntilFriday === 0) daysUntilFriday = 8; // if today IS Thursday, go to next Thursday
+      let daysUntilFriday = (7 - dayOfWeek + 7) % 7;
+      if (daysUntilFriday === 0) daysUntilFriday = 7; // if today IS Thursday, go to next Thursday
 
       endDate.setDate(now.getDate() + daysUntilFriday);
       endDate.setHours(23, 59, 59, 0); // 11:00 UTC = 12:00 WAT
